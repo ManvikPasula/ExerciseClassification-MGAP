@@ -1,0 +1,1 @@
+Due to the size of the checkpoints of the X3D and SlowFast models needed to create the hybrid model, please use the research experimentation scripts to create your own MGAP checkpoints, titled "slowfast.ckpt" and "x3d.ckpt".

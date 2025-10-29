@@ -1,10 +1,6 @@
 # ExerciseClassification-MGAP
 The code repository for "Video-based Exercise Classification and Activated Muscle Group Prediction with Hybrid X3D-SlowFast Network".
 
-The code is presented in the Jupyter Notebook format and was implemented in Google Colab. Further information is found in the notebook files.
-
-The main guides used are PyTorchVideo and PyTorch Lightning. These packages are also used in the implementation.
-
 **Abstract**
 This paper introduces a simple yet effective strategy for exercise classification and muscle group activation prediction (MGAP).
 These tasks have significant implications for personal fitness, facilitating more affordable, accessible, safer, and simpler
@@ -21,3 +17,9 @@ reduction values for the SlowFast model identified near 10. Through an ablation 
 elucidate the interrelation between the two tasks. Our composite model, a weighted-average ensemble of X3D and SlowFast,
 sets a new benchmark in both exercise classification and MGAP across all evaluated categories, offering a robust solution to
 the limitations of previous approaches.
+
+# Guide
+
+The "research_experimentation" subdirectory contains a series of Jupyter Notebooks (originally created in Google Colab) where I researched and experimented various techniques to create the computer vision models. I also trained models and evaluated performance. 
+
+The "feedback_application" subdirectory contains the Python script I use to create an application that enables live usage of the computer vision personal fitness tool. It allows users to record a video of them performing an exercise, which it analyzes and provides feedback. To leverage the hybrid X3D-SlowFast model design I create, 2 MGAP checkpoints are needed, one for SlowFast and one for X3D. These can be created using the scripts in "research_experimentation", should be titled "slowfast.ckpt" and "x3d.ckpt", and placed within the "checkpoints" folder.
